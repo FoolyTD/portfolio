@@ -67,10 +67,10 @@ function ballReset() {
 /*This will separate the movement code. The ball will reverse direction if it contacts paddle*/
 function computerMovement() {
   var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
-  if(paddle2YCenter < ballY -40) {
-    paddle2Y += 6;
-  } else if (paddle2YCenter > ballY +40) {
-    paddle2Y -= 6;
+  if(paddle2YCenter < ballY -20) {
+    paddle2Y += 15;
+  } else if (paddle2YCenter > ballY +20) {
+    paddle2Y -= 15;
   }
 }
 
